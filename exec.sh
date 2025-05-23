@@ -1,6 +1,6 @@
 #!/bin/bash
 
-for i in {0..7154}
+for i in {0..999}
 do
 	python ./train.py ${i}
 done
