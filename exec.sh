@@ -2,7 +2,7 @@
 
 for i in {0..999}
 do
-	python ./train.py ${i}
+	/usr/bin/python3 ./train.py ${i}
 done
 
-python ./result.py
+/usr/bin/python3 ./result.py
