@@ -7,7 +7,7 @@ with open('./SPFaaS_pre.csv', 'r', encoding="utf-8") as csvfile:
     reader = csv.reader(csvfile)
     rows = [row for row in reader]
 
-path = './newData.csv'
+path = './hw_data.csv'
 dt = pd.read_csv(path, header=0)
 dt = dt.iloc[:, :1440]
 

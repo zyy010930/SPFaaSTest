@@ -20,7 +20,7 @@ lengths = 15
 targets = 5
 
 def data_start(nm):
-    path = './newData.csv'
+    path = './hw_data.csv'
     dt = pd.read_csv(path, header=0)
     print(dt.shape)
     l = dt.iloc[nm, :2880]

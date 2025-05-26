@@ -118,7 +118,7 @@ def y_pred_to_numpy(y_pred):
     y_pred = y_pred.detach().cpu().numpy()
     return y_pred
 
-path2 = './newData.csv'
+path2 = './hw_data.csv'
 df = pd.read_csv(path2, header=0)
 df = df.iloc[:, :1440]
 
