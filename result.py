@@ -15,6 +15,8 @@ hit_0 = 0
 sum_0 = 0
 hit_1 = 0
 sum_1 = 0
+num = 0
+sum = 0
 
 for i in range(len(rows)):
     for j in range(1393):
@@ -24,16 +26,15 @@ for i in range(len(rows)):
                 pred = 1
                 break
         if dt.iloc[i, j+43] != 0:
+            sum += dt.iloc[i, j+43]
             sum_1 += 1
             if pred == 1:
+                num += dt.iloc[i, j + 43]
                 hit_1 += 1
         else:
             sum_0 += 1
             if pred == 0:
                 hit_0 += 1
 
-print(sum_1)
-print(sum_0)
-print(hit_1/sum_1)
-print(hit_0/sum_0)
 print((hit_1+hit_0)/(sum_1+sum_0))
+print(num/sum)
